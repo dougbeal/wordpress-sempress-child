@@ -27,7 +27,7 @@ function auto_approve_some_comments($approved, $commentdata) {
         return 1;
     }
     # have no opinion on approval
-    return $approved
+    return $approved;
 }
     
 
