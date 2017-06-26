@@ -19,13 +19,15 @@ function auto_approve_some_comments($approved, $commentdata) {
     if (strpos($commentdata['comment_agent'], 'Bridgy (https://brid.gy/about) AppEngine-Google') !== false ) {
     # facebook doesn't get auto-approved due to privacy concerns
         if (strpos($commentdata['comment_author_url'], 'facebook') !== false) {
-            return 0;
+            return $approved;
         } else {
             return 1;
         }
     } elseif (strpos($commentdata['comment_author'], 'Swarm') !== false ) {
         return 1;
     }
+    # have no opinion on approval
+    return $approved
 }
     
 
