@@ -30,7 +30,6 @@ function auto_approve_some_comments($approved, $commentdata) {
     
 
 add_filter('pre_comment_approved', 'auto_approve_some_comments', '99', 2);
-?>
 /*
 comment_author Swarm
 
@@ -43,3 +42,4 @@ https://brid-gy.appspot.com/like/facebook
 
 
 */
+?>
